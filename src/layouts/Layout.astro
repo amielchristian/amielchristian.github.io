@@ -1,0 +1,47 @@
+---
+import Nav from './Nav.svelte';
+import background from '../assets/background.svg';
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body>
+    <div id='container'>
+      <img id='background' src={background.src} alt='' fetchpriority='high' />
+      <Nav />
+      <slot />
+    </div>
+  </body>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      filter: blur(100px);
+    }
+
+    #container {
+      font-family: monospace;
+      height: 100%;
+      padding: 2.5%;
+    }
+  </style>
+</html>
