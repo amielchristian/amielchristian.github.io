@@ -1,5 +1,6 @@
 ---
-import Nav from './Nav.svelte';
+import Nav from '../components/Nav.svelte';
+import SEO from '../components/SEO.svelte';
 import background from '../assets/background.svg';
 ---
 
@@ -9,8 +10,7 @@ import background from '../assets/background.svg';
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
-    <title>Astro Basics</title>
+    <SEO />
   </head>
   <body>
     <div id='container'>
@@ -18,9 +18,7 @@ import background from '../assets/background.svg';
       <Nav />
       <slot />
     </div>
-  </body>
-
-  <style>
+  </body><style>
     html,
     body {
       margin: 0;
