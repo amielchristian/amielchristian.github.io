@@ -1,4 +1,4 @@
-<nav class='w-full text-center'>
+<nav>
     <a href='/'>Home</a>
     <a href='/about'>About</a>
     <a href='/works'>Works</a>

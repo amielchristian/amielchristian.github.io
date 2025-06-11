@@ -1,7 +1,7 @@
 ---
 import Nav from '../components/Nav.svelte';
 import SEO from '../components/SEO.svelte';
-import background from '../assets/background.svg';
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -14,27 +14,18 @@ import background from '../assets/background.svg';
     <SEO />
   </head>
   <body>
-    <div id='container'>
-      <img id='background' src={background.src} alt='' fetchpriority='high' />
+    <div class="font-mono h-[100%] p-[2.5%]">
       <Nav />
       <slot />
     </div>
-  </body><style>
+  </body>
+  
+  <style>
     html,
     body {
       margin: 0;
       width: 100%;
       height: 100%;
-    }
-
-    #background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      filter: blur(100px);
     }
 
     #container {
