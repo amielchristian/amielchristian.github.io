@@ -1,1 +1,7 @@
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --light: rgb(242, 240, 228);
+  --dark: rgb(31, 31, 31);
+}

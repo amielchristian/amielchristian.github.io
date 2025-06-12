@@ -546,6 +546,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lucide/svelte@^0.514.0":
+  version "0.514.0"
+  resolved "https://registry.npmjs.org/@lucide/svelte/-/svelte-0.514.0.tgz#2b82854d622380f4f2181982249d24264576c08a"
+  integrity sha512-vK6oevxN1CdIWiiCtHKUUlZE/wRVFCtxD+Lj14hbYb5lt+kmU4pBHWjcWhTJL5bJfE1JwCM/pWr+MVzew6JrVg==
+
 "@napi-rs/wasm-runtime@^0.2.10":
   version "0.2.10"
   resolved "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.10.tgz#f3b7109419c6670000b2401e0c778b98afc25f84"
@@ -2042,6 +2047,11 @@ lru-cache@^5.1.1:
   integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
   dependencies:
     yallist "^3.0.2"
+
+lucide@^0.514.0:
+  version "0.514.0"
+  resolved "https://registry.npmjs.org/lucide/-/lucide-0.514.0.tgz#29ddea26f00df5f929a85fe9a3e6f0154f4f2076"
+  integrity sha512-GQ3Rzj1qFANBvTmhe8RM3vR491RGnSjHsivA5wSuEj5taLwH1Sv4N7n6ae3ENGsYRzdrkVXZo4ieUbD1WOXmoA==
 
 magic-string@^0.30.11, magic-string@^0.30.17:
   version "0.30.17"
