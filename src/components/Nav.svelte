@@ -47,10 +47,17 @@
   </div>
 </nav>
 <div
-  class={`sm:hidden overflow-x-hidden flex flex-col bg-white absolute w-full h-full duration-150 ease-linear ${showNav ? 'right-0' : 'right-[-100vw]'}`}
+  class={`flex flex-col sm:hidden overflow-x-hidden
+  absolute w-full h-full
+  transition-[right] duration-150 ease-linear
+  bg-white/5 border-t-2
+  border-t-[var(--dark)] dark:border-t-[var(--light)]
+  text-[var(--dark)] dark:text-[var(--light)]
+  backdrop-blur-[18px]
+  ${showNav ? 'right-0' : 'right-[-100vw]'}`}
 >
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/works">Works</a>
-  <a href="/contact">Contact</a>
+  <a class='pl-[10%] h-15 border-b-2 flex items-center text-2xl font-bold' href="/">Home</a>
+  <a class='pl-[10%] h-15 border-b-2 flex items-center text-2xl font-bold' href="/about">About</a>
+  <a class='pl-[10%] h-15 border-b-2 flex items-center text-2xl font-bold' href="/works">Works</a>
+  <a class='pl-[10%] h-15 border-b-2 flex items-center text-2xl font-bold' href="/contact">Contact</a>
 </div>
