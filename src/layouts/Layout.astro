@@ -1,6 +1,5 @@
 ---
-import Nav from '../components/Nav.svelte';
-import SEO from '../components/SEO.svelte';
+import Nav from '../components/global/Nav.svelte';
 import '../styles/global.css';
 ---
 
@@ -11,15 +10,24 @@ import '../styles/global.css';
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
-    <SEO />
+    <title>Amiel Christian Mala-ay</title>
+    <meta
+      name='description'
+      content='Welcome! This is the personal website of Amiel Christian Mala-ay, full-stack developer and machine learning practitioner. Here, you can read about me and my works.'
+    />
+    <meta
+      name='keywords'
+      content='HTML, CSS, JavaScript, TypeScript, Java, Python, machine learning, machine learning practitioner, software developer, full-stack developer, Amiel, Christian, Estrada, Mala-ay'
+    />
   </head>
   <body
-    class='fixed bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] px-[8%] w-full h-full overflow-x-hidden'
+    class='bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] px-[8%] w-full h-full overflow-x-hidden overflow-y-auto'
   >
     <Nav client:only='svelte' />
-    <div class='font-mono h-[100%] py-[2%]'>
+    <div class='font-[BricolageGrotesque] font-extralight h-[100%] py-[2%]'>
       <slot />
     </div>
+    
   </body>
   <script>
     let theme = localStorage.getItem('theme') ?? 'light';
