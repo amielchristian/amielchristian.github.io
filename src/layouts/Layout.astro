@@ -13,10 +13,16 @@ import '../styles/global.css';
     <meta name='generator' content={Astro.generator} />
     <SEO />
   </head>
-  <body class='bg-[var(--light)] dark:bg-(var(--dark)) px-[8%] w-full overflow-x-clip'>
+  <body
+    class='fixed bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] px-[8%] w-full h-full overflow-x-hidden'
+  >
     <Nav client:only='svelte' />
-    <div class='font-mono h-[100%] py-[2%] dark:text-white'>
+    <div class='font-mono h-[100%] py-[2%]'>
       <slot />
     </div>
   </body>
+  <script>
+    let theme = localStorage.getItem('theme') ?? 'light';
+    if (theme === 'dark') document.documentElement.classList.toggle('dark');
+  </script>
 </html>
