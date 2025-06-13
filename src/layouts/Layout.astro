@@ -1,10 +1,11 @@
 ---
 import Nav from '../components/global/Nav.svelte';
+import Footer from '../components/global/Footer.svelte';
 import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='en' class="h-[full]">
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -21,13 +22,15 @@ import '../styles/global.css';
     />
   </head>
   <body
-    class='bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] px-[8%] w-full h-full overflow-x-hidden overflow-y-auto'
+    class='bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] w-full h-full overflow-x-hidden'
   >
-    <Nav client:only='svelte' />
-    <div class='font-[BricolageGrotesque] font-extralight h-[100%] py-[2%]'>
+    <Nav client:only='svelte' /> <!-- h-50 -->
+    <div
+      class='font-[BricolageGrotesque] font-extralight min-h-[calc(100vh-var(--spacing)*20-var(--spacing)*50)]'
+    >
       <slot />
     </div>
-    
+    <Footer></Footer> <!-- h-50 -->
   </body>
   <script>
     let theme = localStorage.getItem('theme') ?? 'light';

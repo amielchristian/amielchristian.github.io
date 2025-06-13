@@ -9,7 +9,7 @@
 </script>
 
 <nav
-  class="w-full flex flex-row py-2 h-20 justify-between items-center"
+  class="w-full flex flex-row px-[8%] py-2 h-20 justify-between items-center"
 >
   <div class="w-[15%] font-[Junicode] text-xl font-bold">Amiel Christian</div>
   <div

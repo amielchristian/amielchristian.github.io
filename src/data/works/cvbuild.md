@@ -1,5 +1,5 @@
 ---
-title: 'BINI'
+title: 'CVBuild'
 repository: https://github.com/amielchristian/bini
 description: A client-side CV builder.
 tech_stack: ['Svelte', 'WebAssembly', 'TypeScript', 'Tailwind']
