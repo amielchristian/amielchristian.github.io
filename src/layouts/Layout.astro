@@ -1,6 +1,6 @@
 ---
 import Nav from '../components/global/Nav.svelte';
-import Footer from '../components/global/Footer.svelte';
+import Footer from '../components/global/Footer';
 import '../styles/global.css';
 ---
 
@@ -22,15 +22,15 @@ import '../styles/global.css';
     />
   </head>
   <body
-    class='bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] w-full h-full overflow-x-hidden'
+    class='bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] w-full h-full overflow-x-hidden duration-100'
   >
     <Nav client:only='svelte' /> <!-- h-50 -->
     <div
-      class='font-[BricolageGrotesque] font-extralight min-h-[calc(100vh-var(--spacing)*20-var(--spacing)*50)]'
+      class='font-[BricolageGrotesque] font-extralight min-h-[calc(100vh-var(--spacing)*20-var(--spacing)*50)] px-[10%]'
     >
       <slot />
     </div>
-    <Footer></Footer> <!-- h-50 -->
+    <Footer client:only="react"/> <!-- h-50 -->
   </body>
   <script>
     let theme = localStorage.getItem('theme') ?? 'light';

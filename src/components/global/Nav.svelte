@@ -11,7 +11,9 @@
 <nav
   class="w-full flex flex-row px-[8%] py-2 h-20 justify-between items-center"
 >
-  <div class="w-[15%] font-[Junicode] text-xl font-bold">Amiel Christian</div>
+  <div class="w-[15%] font-[Junicode] text-xl font-bold">
+    <a href="/"> Amiel Christian </a>
+  </div>
   <div
     class="hidden sm:flex gap-5 md:gap-20 justify-center place-self-center font-[BricolageGrotesque]"
   >
@@ -54,8 +56,10 @@
   backdrop-blur-[18px]
   ${showNav ? 'right-0' : 'right-[-100vw]'}`}
 >
-  <a class='pl-[10%] h-15 border-b-2 flex items-center' href="/">Home</a>
-  <a class='pl-[10%] h-15 border-b-2 flex items-center' href="/about">About</a>
-  <a class='pl-[10%] h-15 border-b-2 flex items-center' href="/works">Works</a>
-  <a class='pl-[10%] h-15 border-b-2 flex items-center' href="/contact">Contact</a>
+  <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/">Home</a>
+  <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/about">About</a>
+  <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/works">Works</a>
+  <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/contact"
+    >Contact</a
+  >
 </div>

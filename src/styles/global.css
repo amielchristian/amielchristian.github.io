@@ -4,6 +4,7 @@
 :root {
   --light: rgb(242, 240, 228);
   --dark: rgb(31, 31, 31);
+  --theme: #E86100;
 }
 
 @font-face {
