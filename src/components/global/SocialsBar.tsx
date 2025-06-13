@@ -12,35 +12,35 @@ export default function SocialsBar({
       <a
         href='https://github.com/amielchristian'
         aria-label='GitHub'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#000000] duration-200`}
+        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#000000]`}
       >
         <GitHubSVG />
       </a>
       <a
         href='https://www.linkedin.com/in/amiel-christian-mala-ay/'
         aria-label='LinkedIn'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#0A66C2] duration-200`}
+        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#0A66C2]`}
       >
         <LinkedInSVG />
       </a>
       <a
         href='https://www.instagram.com/amiel_mly/'
         aria-label='Instagram'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } duration-200`}
+        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' }`}
       >
         <InstagramSVG />
       </a>
       <a
         href='https://x.com/amiel_mly'
         aria-label='Twitter/X'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#00AAEC] duration-200`}
+        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#00AAEC]`}
       >
         <TwitterSVG />
       </a>
       <a
         href='mailto:amiel.malaay@gmail.com'
         aria-label='Email'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-blue-600 duration-200`}
+        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-blue-600`}
       >
         <EmailSVG />
       </a>
