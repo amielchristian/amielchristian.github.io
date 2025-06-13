@@ -11,7 +11,7 @@
 <nav
   class="w-full flex flex-row px-[8%] py-2 h-20 justify-between items-center"
 >
-  <div class="w-[15%] font-[Junicode] text-xl font-bold">
+  <div class="w-[15%] font-[Junicode] text-xl font-bold text-nowrap">
     <a href="/"> Amiel Christian </a>
   </div>
   <div

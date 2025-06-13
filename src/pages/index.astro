@@ -1,24 +1,27 @@
 ---
+import SocialsBar from '../components/global/SocialsBar';
 import Layout from '../layouts/Layout.astro';
-
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<div>welcome to Amiel's website!</div>
-	<div>a few icon links...</div>
-	<div>abridged about me section...</div>
-	<div>my tech stack...</div>
-	how to organize?
-	general purpose: TypeScript, JS, Java, Kotlin, Python, PHP, Rust, MySQL, PSQL, SQLite
-	web: Astro, Next, Express, Fastify, Flask, Laravel, Django, SvelteKit, WebAssembly, Electron, React, Svelte, Tailwind, SCSS
-	data science: jupyter notebook, tensorflow, keras, scipy, sklearn, transformers library
-	cloud: GCP, DigitalOcean, AWS, Netlify, Vercel
-	other: Ubuntu, LaTeX
+  <div class='min-h-[50vh] my-10 mx-[10%] md:mx-[20%] text-center'>
+    <div class='font-[Junicode] text-8xl font-bold'>
+      <div>hello, my name is <span class='italic'>Amiel!</span></div>
+    </div>
+    <div class='mt-6 mb-4 mx-[10%] lg:mx-[15%]'>I'm a software developer and machine learning practitioner based in Manila. Welcome to my little corner of the internet!</div>
+	<SocialsBar iconDims={5} client:only="react"/>
+  </div>
 
-
-	or a toggle for favorites/notables?
-	
+  <!-- <div>welcome to Amiel's website!</div>
+  <div>a few icon links...</div>
+  <div>abridged about me section...</div>
+  <div>my tech stack...</div>
+  how to organize? general purpose: TypeScript, JS, Java, Kotlin, Python, PHP, Rust,
+  MySQL, PSQL, SQLite web: Astro, Next, Express, Fastify, Flask, Laravel, Django,
+  SvelteKit, WebAssembly, Electron, React, Svelte, Tailwind, SCSS data science: jupyter
+  notebook, tensorflow, keras, scipy, sklearn, transformers library cloud: GCP, DigitalOcean,
+  AWS, Netlify, Vercel other: Ubuntu, LaTeX or a toggle for favorites/notables? -->
 </Layout>
