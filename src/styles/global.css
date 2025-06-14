@@ -15,10 +15,12 @@ pastel blue - b4cbf0, a8b5e0, 8395c1
 */
 
 :root {
-  --light: rgb(242, 240, 228);
-  --dark: rgb(31, 31, 31);
-  --theme-1: #3279CB;
+  --light: #f2f0e4;
+  --dark: #1f1f1f;
+  --theme-1: #3279cb;
   --theme-2: #7e9ea0;
+  --icon: #555555;
+  --skill-light: #f4f2ed;
 }
 
 @font-face {

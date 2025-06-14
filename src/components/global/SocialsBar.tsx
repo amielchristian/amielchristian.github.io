@@ -8,7 +8,7 @@ export default function SocialsBar({
   iconDims?: number;
 }) {
   return (
-    <div className={className ?? 'flex flex-row justify-center gap-4 mb-3'}>
+    <div className={className ?? 'flex flex-row justify-center gap-4 mb-3 text-[var(--icon)]'}>
       <a
         href='https://github.com/amielchristian'
         aria-label='GitHub'

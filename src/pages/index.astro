@@ -1,16 +1,15 @@
 ---
 import SocialsBar from '../components/global/SocialsBar';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
   <section
-    class='h-[calc(100vh-var(--spacing)*20)] flex flex-col justify-center mx-[10%] md:mx-[15%] lg:mx-[20%] text-center'
+    class='h-[100vh] flex flex-col justify-center mx-[10%] md:mx-[15%] lg:mx-[20%] text-center'
   >
-    <div class='font-[Junicode] leading-none text-[calc(100%+15vw)] sm:text-[calc(100%+11.5vw)] md:text-[calc(100%+8vw)] font-bold'>
+    <div
+      class='font-[Junicode] leading-none text-[calc(100%+15vw)] sm:text-[calc(100%+11.5vw)] md:text-[calc(100%+8vw)] font-bold'
+    >
       <div>
         hello, my name is <span class='italic text-[var(--theme-1)]'>Amiel</span
         >.
@@ -26,7 +25,9 @@ import Layout from '../layouts/Layout.astro';
     <SocialsBar client:only='react' />
   </section>
   <section class='min-h-[100vh] mx-[5%] md:mx-[7.5%]'>
-    <div class='font-[BricolageGrotesque] text-6xl font-bold text-center sm:text-left'>
+    <div
+      class='font-[BricolageGrotesque] text-6xl font-bold text-center sm:text-left'
+    >
       Tech Stack
     </div>
     <div class='mt-6 grid lg:grid-cols-[1fr_2fr] grid-rows-auto gap-4 lg:gap-8'>
@@ -39,33 +40,124 @@ import Layout from '../layouts/Layout.astro';
           compiler design. These are some of the technologies I am most
           experienced in and enjoy using the most.
         </div>
-        <div>Learn more about me and my experience with all sorts of technologies <a href='/about'>here</a>.</div>
+        <div>
+          Learn more about me and my experience with all sorts of technologies <a
+            href='/about'>here</a
+          >.
+        </div>
         <!-- <div>
           (I want the border to be colored, with the color moving when the div
           is moused over.)
         </div> -->
       </div>
       <div
-        class='border-4 rounded-2xl py-[8%] px-[2%] grid grid-cols-3 sm:grid-cols-4 gap-10 text-[calc(100%+5vw)] sm:text-[calc(100%+3vw)] text-center'
+        class='border-4 rounded-xl py-[8%] px-[2%] grid grid-cols-3 sm:grid-cols-4 gap-4'
       >
-        <i class='devicon-typescript-plain colored'></i>
-        <i class='devicon-javascript-plain colored'></i>
-        <i class='devicon-java-plain colored'></i>
-        <i class='devicon-python-plain colored'></i>
-
-        <i class='devicon-react-plain colored'></i>
-        <i class='devicon-svelte-plain colored'></i>
-        <i class='devicon-nextjs-plain colored'></i>
-
-        <i class='devicon-django-plain colored'></i>
-        <i class='devicon-laravel-plain colored'></i>
-        <i class='devicon-flask-plain colored'></i>
-        <i class='devicon-express-original colored'></i>
-
-        <i class='devicon-mysql-plain colored'></i>
-        <i class='devicon-postgresql-plain colored'></i>
-        <i class='devicon-tensorflow-original colored'></i>
-        <i class='devicon-keras-plain colored'></i>
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[#007acc]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[#f0db4f]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg'
+            />
+          </div></i
+        >
+        <i class='flex justify-center'
+          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[#d00000]">
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg'
+            />
+          </div></i
+        >
       </div>
     </div>
   </section>
