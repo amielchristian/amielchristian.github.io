@@ -1,6 +1,5 @@
 ---
 import SocialsBar from '../components/global/SocialsBar';
-import Container from '../components/global/Container.svelte';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -8,8 +7,10 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <div class='min-h-[calc(100vh-var(--spacing)*20)]  sm:min-h-[50vh] mt-[10%] sm:mb-20 mx-[10%] md:mx-[20%] text-center'>
-    <div class='font-[Junicode] text-8xl font-bold'>
+  <section
+    class='min-h-[calc(100vh-var(--spacing)*20)] mt-[10%] mx-[10%] md:mx-[15%] lg:mx-[20%] text-center'
+  >
+    <div class='font-[Junicode] text-8xl sm:text-9xl font-bold'>
       <div>
         hello, my name is <span class='italic text-[var(--theme-1)]'>Amiel</span
         >.
@@ -19,44 +20,55 @@ import Layout from '../layouts/Layout.astro';
       I'm a software developer and machine learning practitioner based in
       Manila. Welcome to my little corner of the internet!
     </div>
+    <div class='sm:mt-6 mb-4 mx-[10%] lg:mx-[15%]'>
+      Learn more about me <a href='/about'>here</a>.
+    </div>
     <SocialsBar client:only='react' />
-  </div>
-  <div class='min-h-[100vh]'>
-    <div class='my-10 font-[BricolageGrotesque] text-4xl font-bold text-center'>
+  </section>
+  <section class='min-h-[100vh] mx-[5%] md:mx-[7.5%]'>
+    <div class='font-[BricolageGrotesque] text-6xl font-bold text-center sm:text-left'>
       Tech Stack
     </div>
-    <div class='mt-6 mb-4 mx-[10%] lg:mx-[15%]'>
-      Here are some of the technologies I am experienced in and/or enjoy using.
-    </div>
-    <div>
-      I want the border to be colored, with the color moving when the div is
-      moused over.
-    </div>
-    <div
-      class='mx-[20%] w-auto border-4 rounded-2xl p-8 grid grid-cols-4 gap-2 text-8xl text-center'
-    >
-      <i class='devicon-typescript-plain colored'></i>
-      <i class='devicon-javascript-plain colored'></i>
-      <i class='devicon-java-plain colored'></i>
-      <i class='devicon-python-plain colored'></i>
+    <div class='mt-6 grid lg:grid-cols-[1fr_2fr] gap-4 lg:gap-8'>
+      <div
+        class='flex flex-col gap-2 mb-6 mt-4 text-justify text-lg grow-0 lg:items-center lg:ml-4'
+      >
+        <div>
+          My skills and interest computer science span a variety of fields of
+          computer science, including web development, machine learning, and
+          compiler design. These are some of the technologies I am most
+          experienced in and enjoy using the most.
+        </div>
+        <div>Learn more about me and my experience with all sorts of technologies <a href='/about'>here</a>.</div>
+        <!-- <div>
+          (I want the border to be colored, with the color moving when the div
+          is moused over.)
+        </div> -->
+      </div>
+      <div
+        class='w-auto border-4 rounded-2xl p-6 grid grid-cols-4 gap-2 text-7xl text-center'
+      >
+        <i class='devicon-typescript-plain colored'></i>
+        <i class='devicon-javascript-plain colored'></i>
+        <i class='devicon-java-plain colored'></i>
+        <i class='devicon-python-plain colored'></i>
 
-      <i class='devicon-php-plain colored'></i>
-      <i class='devicon-react-plain colored'></i>
-      <i class='devicon-svelte-plain colored'></i>
-      <!-- <div>Astro</div> -->
+        <i class='devicon-react-plain colored'></i>
+        <i class='devicon-svelte-plain colored'></i>
+        <i class='devicon-nextjs-plain colored'></i>
 
-      <i class='devicon-nextjs-plain colored'></i>
-      <i class='devicon-django-plain colored'></i>
-      <i class='devicon-laravel-plain colored'></i>
-      <i class='devicon-flask-plain colored'></i>
+        <i class='devicon-django-plain colored'></i>
+        <i class='devicon-laravel-plain colored'></i>
+        <i class='devicon-flask-plain colored'></i>
+        <i class='devicon-express-original colored'></i>
 
-      <i class='devicon-express-original colored'></i>
-      <i class='devicon-mysql-plain colored'></i>
-      <i class='devicon-postgresql-plain colored'></i>
-      <i class='devicon-tensorflow-original colored'></i>
-      <i class='devicon-keras-plain colored'></i>
+        <i class='devicon-mysql-plain colored'></i>
+        <i class='devicon-postgresql-plain colored'></i>
+        <i class='devicon-tensorflow-original colored'></i>
+        <i class='devicon-keras-plain colored'></i>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- <div>welcome to Amiel's website!</div>
   <div>a few icon links...</div>
