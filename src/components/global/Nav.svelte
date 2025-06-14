@@ -15,7 +15,7 @@
     <a href="/"> Amiel Christian </a>
   </div>
   <div
-    class="hidden sm:flex gap-5 md:gap-20 justify-center place-self-center font-[BricolageGrotesque]"
+    class="hidden sm:flex gap-5 lg:gap-30 justify-center place-self-center font-[BricolageGrotesque]"
   >
     <a href="/">Home</a>
     <a href="/about">About</a>
@@ -59,7 +59,7 @@
   <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/">Home</a>
   <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/about">About</a>
   <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/works">Works</a>
-  <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/contact"
-    >Contact</a
-  >
+  <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/contact">
+    Contact
+  </a>
 </div>

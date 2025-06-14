@@ -1,10 +1,24 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
+/*
+will wythe blue (prefer ni candace <3) - 7e9ea0
+ww blue complements - 618284
+blue greens - 197278, 55828b
+greens - 2c6e49, 4c956c
+mint greens - b0c4b1, cbdfbd, #B3F2DA
+muted green - c9cba3, 87bba2
+
+blue - 3279CB
+muted blue - 417EA4
+pastel blue - b4cbf0, a8b5e0, 8395c1
+*/
+
 :root {
   --light: rgb(242, 240, 228);
   --dark: rgb(31, 31, 31);
-  --theme: #E86100;
+  --theme-1: #3279CB;
+  --theme-2: #7e9ea0;
 }
 
 @font-face {

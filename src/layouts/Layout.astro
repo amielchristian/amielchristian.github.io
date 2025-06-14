@@ -5,11 +5,16 @@ import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang='en' class="h-[full] w-[full]">
+<html lang='en' class='h-[full] w-[full]'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link
+      rel='stylesheet'
+      type='text/css'
+      href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css'
+    />
     <meta name='generator' content={Astro.generator} />
     <title>Amiel Christian Mala-ay</title>
     <meta
@@ -24,13 +29,15 @@ import '../styles/global.css';
   <body
     class='text-[var(--dark)] bg-[var(--light)] dark:bg-[var(--dark)] dark:text-[var(--light)] w-full h-full overflow-x-hidden duration-100'
   >
-    <Nav client:only='svelte' /> <!-- h-50 -->
+    <Nav client:only='svelte' />
+    <!-- h-50 -->
     <div
       class='font-[BricolageGrotesque] min-h-[calc(100vh-var(--spacing)*20-var(--spacing)*50)] px-[10%]'
     >
       <slot />
     </div>
-    <Footer client:only="react"/> <!-- h-50 -->
+    <Footer client:only='react' />
+    <!-- h-50 -->
   </body>
   <script>
     let theme = localStorage.getItem('theme') ?? 'light';
