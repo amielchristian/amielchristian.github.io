@@ -5,10 +5,10 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
   <section
-    class='h-[100vh] flex flex-col justify-center mx-[10%] md:mx-[15%] lg:mx-[20%] text-center mb-[5%]'
+    class='h-[100vh] xl:h-200 flex flex-col justify-center mx-[10%] md:mx-[15%] lg:mx-[20%] text-center mb-[5%]'
   >
     <div
-      class='font-[Junicode] leading-none text-[calc(100%+15vw)] sm:text-[calc(100%+11.5vw)] md:text-[calc(100%+8vw)] font-bold'
+      class='font-[Junicode] leading-none text-[calc(100%+15vw)] sm:text-[calc(100%+11.5vw)] md:text-[calc(100%+8vw)] xl:text-9xl font-bold'
     >
       <div>
         hello, my name is <span class='italic text-[var(--theme-1)]'>Amiel</span
@@ -24,15 +24,15 @@ import Layout from '../layouts/Layout.astro';
     </div>
     <SocialsBar client:only='react' />
   </section>
-  <section class='mx-[5%] md:mx-[7.5%] mb-[5%]'>
+  <section class='mx-[5%] md:mx-auto mb-[5%]'>
     <div
       class='font-[BricolageGrotesque] text-6xl font-bold text-center sm:text-left'
     >
       Tech Stack
     </div>
-    <div class='mt-6 grid xl:grid-cols-[1fr_2fr] grid-rows-auto gap-4 lg:gap-8'>
+    <div class='mt-6 flex flex-col xl:flex-row gap-4 lg:gap-8'>
       <div
-        class='flex flex-col gap-2 mb-6 mt-4 text-justify lg:ml-4'
+        class='xl:w-[33%] flex flex-col gap-2 mb-6 mt-4 text-justify lg:ml-4'
       >
         <div>
           My skills and interest computer science span a variety of fields of
@@ -51,7 +51,8 @@ import Layout from '../layouts/Layout.astro';
         </div> -->
       </div>
       <div
-        class='border-4 rounded-xl p-5 sm:p-8 lg:p-12 grid grid-rows-auto grid-cols-3 sm:grid-cols-5 gap-3 sm:gap-5'
+        class='xl:w-[67%] p-5 sm:p-8 lg:p-12 grid grid-cols-3 sm:grid-cols-5 gap-3 sm:gap-5
+        border-4 sm:border-6 rounded-4xl border-[#0000] animated-border drop-shadow-xl'
       >
         <i class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#007acc] p-2'>
           <img
@@ -66,7 +67,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -74,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -82,7 +83,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -90,7 +91,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -98,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -106,7 +107,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -114,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -122,7 +123,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -130,7 +131,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -138,7 +139,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -146,7 +147,7 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
@@ -154,14 +155,14 @@ import Layout from '../layouts/Layout.astro';
           />
         </i>
         <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)] p-2'
+          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
         >
           <img
             class='object-fill'
             src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg'
           />
         </i>
-        <i class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#d00000]'>
+        <i class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#d00000] p-2'>
           <img
             class='object-fill'
             src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg'
