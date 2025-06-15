@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
   <section
-    class='h-[100vh] flex flex-col justify-center mx-[10%] md:mx-[15%] lg:mx-[20%] text-center'
+    class='h-[100vh] flex flex-col justify-center mx-[10%] md:mx-[15%] lg:mx-[20%] text-center mb-[5%]'
   >
     <div
       class='font-[Junicode] leading-none text-[calc(100%+15vw)] sm:text-[calc(100%+11.5vw)] md:text-[calc(100%+8vw)] font-bold'
@@ -24,15 +24,15 @@ import Layout from '../layouts/Layout.astro';
     </div>
     <SocialsBar client:only='react' />
   </section>
-  <section class='min-h-[100vh] mx-[5%] md:mx-[7.5%]'>
+  <section class='mx-[5%] md:mx-[7.5%] mb-[5%]'>
     <div
       class='font-[BricolageGrotesque] text-6xl font-bold text-center sm:text-left'
     >
       Tech Stack
     </div>
-    <div class='mt-6 grid lg:grid-cols-[1fr_2fr] grid-rows-auto gap-4 lg:gap-8'>
+    <div class='mt-6 grid xl:grid-cols-[1fr_2fr] grid-rows-auto gap-4 lg:gap-8'>
       <div
-        class='flex flex-col gap-2 mb-6 mt-4 text-justify text-lg lg:items-center lg:ml-4'
+        class='flex flex-col gap-2 mb-6 mt-4 text-justify lg:items-center lg:ml-4'
       >
         <div>
           My skills and interest computer science span a variety of fields of
@@ -51,115 +51,116 @@ import Layout from '../layouts/Layout.astro';
         </div> -->
       </div>
       <div
-        class='border-4 rounded-xl py-[8%] px-[2%] grid grid-cols-3 sm:grid-cols-4 gap-4'
+        class='border-4 rounded-xl py-5 px-5 grid grid-rows-auto grid-cols-3 sm:grid-cols-5 gap-5'
       >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[#007acc]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[#007acc]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[#f0db4f]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[#f0db4f]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[var(--skill-light)] dark:bg-[var(--light)]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg'
             />
           </div></i
         >
-        <i class='flex justify-center'
-          ><div class="drop-shadow-md p-2 w-18 h-18 rounded-lg overflow-hidden bg-[#d00000]">
-            <img
+        <i class='aspect-1 flex justify-center'
+          ><div class="drop-shadow-md p-2 min-w-[100%] min-h-[100%] max-w-[100%] max-h-[100%] rounded-lg overflow-hidden bg-[#d00000]">
+            <img class='object-fill'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg'
             />
           </div></i
         >
       </div>
     </div>
+    
   </section>
 
   <!-- <div>welcome to Amiel's website!</div>
