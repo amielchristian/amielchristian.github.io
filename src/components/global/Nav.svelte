@@ -11,18 +11,20 @@
 <nav
   class="w-full flex flex-row px-[8%] py-2 h-20 justify-between items-center"
 >
-  <div class="w-[15%] font-[Junicode] text-xl font-bold text-nowrap">
-    <a href="/"> Amiel Christian </a>
-  </div>
+  <a
+    class="w-[80%] sm:w-[25%] font-[Junicode] text-[1.4em] md:text-2xl font-bold text-nowrap tracking-tight overflow-hidden"
+    href="/"
+    ><span>Amiel Christian</span></a
+  >
   <div
-    class="hidden sm:flex gap-5 lg:gap-30 justify-center place-self-center font-[BricolageGrotesque]"
+    class="hidden sm:flex w-[50%] px-[5%] justify-between place-self-center font-[BricolageGrotesque]"
   >
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/works">Works</a>
     <a href="/contact">Contact</a>
   </div>
-  <div class="w-[15%] flex flex-row gap-4 justify-center">
+  <div class="w-[25%] flex flex-row gap-4 justify-end">
     <button
       class="hover:cursor-pointer"
       onclick={() => {
