@@ -14,6 +14,9 @@ muted blue - 417EA4
 pastel blue - b4cbf0, a8b5e0, 8395c1
 */
 
+/*
+IDEA: switch to Cyndaquil-inspired theme!!!!! it's my github profile pic after all
+*/
 :root {
   --light: #f2f0e4;
   --dark: #1f1f1f;
@@ -21,12 +24,30 @@ pastel blue - b4cbf0, a8b5e0, 8395c1
   --blue-2: #597072;
   --blue-2-dark: #7e9ea0;
   --yellow-1: #ffec7e;
+  --yellow-2: #e1724dff;
   --icon: #737373;
+
+  /* Cyndaquil!! */
+  --atomic-tangerine: #ee9162ff;
+  --burnt-sienna: #e1724dff;
+  --naples-yellow: #f2d045ff;
+  --slate-gray: #5f7d83ff;
+  --caribbean-current: #356b73ff;
+  --peach-yellow: #ebd69dff;
+  --khaki: #b1a282ff;
+  --licorice: #26110dff;
 }
 
 .animated-border {
   background: linear-gradient(#252525, #252525) padding-box,
-    linear-gradient(var(--angle), var(--blue-1), var(--blue-2-dark), var(--yellow-1)) border-box;
+    linear-gradient(
+        var(--angle),
+        var(--blue-1),
+        var(--blue-2-dark),
+        var(--yellow-1),
+        var(--yellow-2)
+      )
+      border-box;
   animation: 8s rotate linear infinite;
 }
 
