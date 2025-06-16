@@ -25,9 +25,7 @@ import Layout from '../layouts/Layout.astro';
     <SocialsBar client:only='react' />
   </header>
   <section class='mb-[5%]'>
-    <div
-      class='font-[BricolageGrotesque] text-6xl font-bold text-center sm:text-left'
-    >
+    <div class='font-[BricolageGrotesque] text-6xl font-bold sm:text-left'>
       Tech Stack
     </div>
     <div class='mt-6 flex flex-col xl:flex-row gap-4 lg:gap-8'>
@@ -51,123 +49,69 @@ import Layout from '../layouts/Layout.astro';
         </div> -->
       </div>
       <div
-        class='xl:w-[67%] p-5 sm:p-8 lg:p-12 grid grid-cols-5 gap-3 sm:gap-5
+        class='p-5 sm:p-8 lg:p-12 grid grid-cols-5 gap-3 sm:gap-5 xl:w-[67%]
         border-4 sm:border-6 rounded-4xl border-[#0000] animated-border drop-shadow-xl'
       >
-        <i class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#007acc] p-2'>
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
-          /></i
-        >
-        <i class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#f0db4f] p-2'>
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg'
-          />
-        </i>
-        <i
-          class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2'
-        >
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg'
-          />
-        </i>
-        <i class='aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#d00000] p-2'>
-          <img
-            class='object-fill'
-            src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg'
-          />
-        </i>
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#007acc] p-2 object-fill '
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#f0db4f] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[var(--skill)] dark:bg-[var(--light)] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg'
+        />
+        <img
+          class='m-auto w-20 aspect-1 drop-shadow-lg rounded-lg overflow-hidden bg-[#d00000] p-2 object-fill'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg'
+        />
       </div>
     </div>
   </section>
