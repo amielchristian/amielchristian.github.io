@@ -2,6 +2,11 @@
 import SocialsBar from '../components/global/SocialsBar';
 import SkillPanel from '../components/global/SkillPanel.svelte';
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const featured = await getCollection('works', ({ data }) => {
+  return data.featured;
+});
 ---
 
 <Layout>
@@ -29,9 +34,7 @@ import Layout from '../layouts/Layout.astro';
     <SocialsBar client:only='react' />
   </header>
   <section class='mb-[5%]'>
-    <div class='font-[BricolageGrotesque] text-6xl font-bold sm:text-left'>
-      Tech Stack
-    </div>
+    <div class='font-[BricolageGrotesque] text-6xl font-bold'>Tech Stack</div>
     <div class='mt-6 flex flex-col xl:flex-row gap-4 lg:gap-8'>
       <div
         class='xl:w-[33%] flex flex-col gap-2 mb-6 mt-4 text-justify lg:ml-4'
@@ -54,6 +57,20 @@ import Layout from '../layouts/Layout.astro';
         </div> -->
       </div>
       <SkillPanel client:only='svelte' />
+    </div>
+  </section>
+  <section class=''>
+    <div class='font-[BricolageGrotesque] text-6xl font-bold text-center'>
+      Featured Works
+    </div>
+    <div class='grid'>
+      {
+        featured.map((work) => (
+          <a href={`/works/${work.id}`}>
+            <li>{work.data.title}</li>
+          </a>
+        ))
+      }
     </div>
   </section>
 

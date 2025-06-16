@@ -1,6 +1,6 @@
 ---
 title: 'T2Distill-GradCAM'
-repository: 
+featured: true
 description: z.string(),
 tech_stack: ['Python', 'TensorFlow', 'Keras']
 main_image: ''

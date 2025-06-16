@@ -1,5 +1,6 @@
 ---
 title: 'CakeYum'
+featured: true
 repository: https://github.com/amielchristian/cake-yum
 description: z.string(),
 tech_stack: ['Java Enterprise Edition', 'MySQL', 'JavaScript']

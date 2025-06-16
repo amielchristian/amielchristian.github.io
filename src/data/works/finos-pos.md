@@ -1,9 +1,8 @@
 ---
-title: 'BINI'
-featured: true
+title: Fino's Point of Sale System
 repository: https://github.com/amielchristian/bini
 description: A framework for building shields against Filipino adversarial prompts for large language models
-tech_stack: ['Python', 'Keras']
+tech_stack: ['Python', 'Flask', 'Firebase']
 main_image: ''
 images: []
 ---

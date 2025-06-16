@@ -1,5 +1,6 @@
 ---
 title: 'CICS-FAMS'
+featured: true
 description: z.string(),
 tech_stack: ['Django', 'PostgreSQL', 'Bootstrap', 'JavaScript']
 main_image: ''
