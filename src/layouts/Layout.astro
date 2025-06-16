@@ -27,13 +27,12 @@ import '../styles/global.css';
     />
   </head>
   <body
-    class='text-[var(--dark)] dark:text-[var(--light)] bg-[var(--light)] dark:bg-[var(--dark)] w-full h-full overflow-x-hidden font-[BricolageGrotesque]'
+    class='h-full mx-auto max-w-[100%] lg:max-w-[1024px] xl:max-w-[1280px] text-[var(--dark)] dark:text-[var(--light)] bg-[var(--light)] dark:bg-[var(--dark)] overflow-x-hidden font-[BricolageGrotesque]'
   >
     <Nav client:only='svelte' />
     <!-- h-50 -->
     <main
-      class='min-h-[calc(100vh-var(--spacing)*20-var(--spacing)*50)] mx-auto
-      max-w-[100%] lg:max-w-[1024px] xl:max-w-[1280px]
+      class='min-h-[calc(100vh-var(--spacing)*20-var(--spacing)*50)]
       p-12'
     >
       <slot />
