@@ -9,7 +9,8 @@
 </script>
 
 <nav
-  class="mx-auto flex flex-row p-2 h-20 justify-between items-center"
+  class="mx-auto max-w-[100%] lg:max-w-[1024px] xl:max-w-[1280px]
+  flex flex-row p-2 h-20 justify-between items-center"
 >
   <a
     class="w-[80%] sm:w-[25%] font-[Junicode] text-[1.4em] md:text-2xl font-bold text-nowrap tracking-tight overflow-hidden"

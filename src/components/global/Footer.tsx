@@ -3,7 +3,7 @@ import SocialsBar from "./SocialsBar"
 export default function Footer() {
   return (
     <footer
-      className='w-full h-60 pt-8 p-2
+      className='w-[100vw] h-60 pt-8 p-2
         dark:text-[var(--dark)] dark:bg-[var(--light)]
         text-[var(--light)] bg-[var(--dark)]
         grid justify-center gap-4
