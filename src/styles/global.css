@@ -17,14 +17,16 @@ pastel blue - b4cbf0, a8b5e0, 8395c1
 :root {
   --light: #f2f0e4;
   --dark: #1f1f1f;
-  --theme-1: #3279cb;
+  --blue-1: #3279cb;
+  --blue-2: #597072;
+  --blue-2-dark: #7e9ea0;
+  --yellow-1: #ffec7e;
   --icon: #737373;
-  --skill: #f4f2ed;
 }
 
 .animated-border {
   background: linear-gradient(#252525, #252525) padding-box,
-    linear-gradient(var(--angle), #3279cb, #7e9ea0) border-box;
+    linear-gradient(var(--angle), var(--blue-1), var(--blue-2-dark), var(--yellow-1)) border-box;
   animation: 8s rotate linear infinite;
 }
 

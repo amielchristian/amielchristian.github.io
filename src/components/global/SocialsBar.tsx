@@ -40,7 +40,7 @@ export default function SocialsBar({
       <a
         href='mailto:amiel.malaay@gmail.com'
         aria-label='Email'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[var(--theme-1)]`}
+        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[var(--blue-1)]`}
       >
         <EmailSVG />
       </a>
