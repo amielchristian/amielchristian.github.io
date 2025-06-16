@@ -1,6 +1,7 @@
 ---
 import SocialsBar from '../components/global/SocialsBar';
 import SkillPanel from '../components/global/SkillPanel.svelte';
+import ProjectCard from '../components/global/ProjectCard.svelte';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
@@ -51,10 +52,6 @@ const featured = await getCollection('works', ({ data }) => {
             href='/about'>here</a
           >.
         </div>
-        <!-- <div>
-          (I want the border to be colored, with the color moving when the div
-          is moused over.)
-        </div> -->
       </div>
       <SkillPanel client:only='svelte' />
     </div>
@@ -63,12 +60,10 @@ const featured = await getCollection('works', ({ data }) => {
     <div class='font-[BricolageGrotesque] text-6xl font-bold text-center'>
       Featured Works
     </div>
-    <div class='grid'>
+    <div class='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3'>
       {
         featured.map((work) => (
-          <a href={`/works/${work.id}`}>
-            <li>{work.data.title}</li>
-          </a>
+          <ProjectCard client:media='svelte' title={work.data.title} url={`/works/${work.id}`} image={work.data.main_image} description={work.data.description} />
         ))
       }
     </div>

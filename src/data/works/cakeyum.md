@@ -2,10 +2,8 @@
 title: 'CakeYum'
 featured: true
 repository: https://github.com/amielchristian/cake-yum
-description: z.string(),
+description: A simple full-stack website for a fictional bakery.
 tech_stack: ['Java Enterprise Edition', 'MySQL', 'JavaScript']
-main_image: ''
+main_image: '/works/cakeyum-main.png'
 images: []
 ---
-
-A simple full-stack website for a fictional bakery.

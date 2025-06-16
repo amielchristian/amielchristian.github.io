@@ -57,7 +57,8 @@
 </script>
 
 <div
-  class="p-5 sm:p-8 lg:p-12 grid grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5 xl:w-[67%]
+  class="p-5 sm:p-8 lg:p-12
+        grid grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5 
         border-4 sm:border-6 rounded-4xl border-transparent animated-border drop-shadow-xl"
 >
   {#each Object.entries(skills) as [name, { url, color }]}
