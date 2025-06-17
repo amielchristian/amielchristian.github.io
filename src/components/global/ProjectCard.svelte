@@ -13,7 +13,7 @@
         group hover:cursor-pointer
         duration-150"
 >
-  <div class='absolute top-0 bg-[var(--light)] dark:bg-[var(--dark)] overflow-hidden w-full h-full'>
+  <div class="absolute top-0 bg-[image:] overflow-hidden w-full h-full">
     <img
       class="group-hover:blur-sm duration-150 z-0"
       src={image}
@@ -26,7 +26,7 @@
         dark:text-[var(--dark)] dark:bg-[var(--light)]
         text-[var(--light)] bg-[var(--dark)]"
   >
-    <div class='py-3 text-xl font-bold'>{title}</div>
-    <div class='py-3 font-normal'>{description}</div>
+    <div class="py-3 text-xl font-bold">{title}</div>
+    <div class="py-3 font-normal">{description}</div>
   </div>
 </a>

@@ -14,7 +14,7 @@
       color: 'bg-[#f0db4f]',
     },
     java: {
-      url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
+      url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
     },
     python: {
       url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
@@ -57,15 +57,16 @@
 </script>
 
 <div
-  class="p-5 sm:p-8 lg:p-12
-        grid grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-5 
-        border-4 sm:border-6 rounded-4xl border-transparent animated-border shadow-xl"
+  class="border-4 sm:border-6 rounded-4xl border-transparent animated-border shadow-xl overflow-hidden"
 >
-  {#each Object.entries(skills) as [name, { url, color }]}
-    <img
-      class={`m-auto p-1 w-20 aspect-1 shadow-lg rounded-lg overflow-hidden ${color ?? 'bg-[#f4f2ed]'}`}
-      src={url}
-      alt={name}
-    />
-  {/each}
+  <div class="w-full h-full p-5 sm:p-8 lg:p-12
+          grid grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-5">
+    {#each Object.entries(skills) as [name, { url, color }]}
+      <img
+        class={`m-auto p-1 w-20 aspect-1 shadow-lg rounded-lg overflow-hidden ${color ?? 'bg-[#f4f2ed]'}`}
+        src={url}
+        alt={name}
+      />
+    {/each}
+  </div>
 </div>

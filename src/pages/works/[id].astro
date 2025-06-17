@@ -19,7 +19,23 @@ const { Content } = await render(work);
 ---
 
 <Layout>
-  <h1>{work.data.title}</h1>
-  <Content />
-  
+  <h1 class='text-4xl'>{work.data.title}</h1>
+  <div class='markdown'>
+    <Content />
+  </div>
 </Layout>
+
+<style is:global>
+  .markdown a {
+    color: rgb(134, 14, 232);
+  }
+  .markdown h1 {
+    font-size: x-large;
+  }
+  .dark .markdown a {
+    color: aqua;
+  }
+  .markdown p {
+    margin: 1% auto;
+  }
+</style>

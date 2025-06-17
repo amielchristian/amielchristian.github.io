@@ -36,18 +36,20 @@ IDEA: switch to Cyndaquil-inspired theme!!!!! it's my github profile pic after a
   --peach-yellow: #ebd69dff;
   --khaki: #b1a282ff;
   --licorice: #26110dff;
+}
 
-  --grid-pattern: repeating-linear-gradient(
+.grid-pattern {
+  background-image: repeating-linear-gradient(
       to right,
-      var(--red) 0,
-      var(--red) 1px,
+      var(blue) 0,
+      var(blue) 1px,
       transparent 1px,
       transparent 25px
     ),
     repeating-linear-gradient(
       to bottom,
-      var(--red) 0,
-      var(--red) 1px,
+      var(blue) 0,
+      var(blue) 1px,
       transparent 1px,
       transparent 25px
     );
