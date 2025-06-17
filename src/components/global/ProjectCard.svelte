@@ -50,10 +50,10 @@ maybe center after a certain aspect ratio threshold?
 >
   <div class="absolute top-0 bg-white dark:bg-black drop-shadow-2xl overflow-hidden w-full h-full">
     <canvas class="absolute top-0 z-0" bind:this={canvas}></canvas>
+    <!-- svelte-ignore a11y_missing_attribute -->
     <img
       class="absolute top-0 group-hover:blur-[2px] duration-150 z-1"
       src={image}
-      alt={`Image of ${title}`}
     />
   </div>
   <div
