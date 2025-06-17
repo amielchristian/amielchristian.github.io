@@ -2,8 +2,8 @@
   import { onMount } from 'svelte';
 
   const { title, image, url, description } = $props();
-  const height = 30;
-  const width = 60;
+  const height = 40;
+  const width = 40;
   const cellSize = 25;
   let canvas: HTMLCanvasElement;
 
@@ -42,7 +42,7 @@ maybe center after a certain aspect ratio threshold?
 <a
   href={url}
   class="relative rounded-md overflow-hidden
-        border-2 border-[var(--dark)] dark:border-[var(--light)] hover:border-4
+        border-2 border-[var(--dark)] dark:border-blue-50 hover:border-4
         animated-border hover:border-transparent
         w-full h-75
         group hover:cursor-pointer

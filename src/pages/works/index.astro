@@ -1,20 +1,28 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
+import ProjectCard from '../../components/global/ProjectCard.svelte';
 import { getCollection } from 'astro:content';
 
 const works = await getCollection('works');
 ---
 
 <Layout>
-  <div>These are my works!</div>
-  <ul>
-    {
-      works.map((work) => (
-        <a href={`/works/${work.id}`}>
-          <li>{work.data.title}</li>
-        </a>
-      ))
-    }
-  </ul>
+  <section class='mb-[5%]'>
+    <div class='font-[BricolageGrotesque] text-6xl font-bold text-center'>
+      Works
+    </div>
+    <div class='mt-12 grid grid-cols-1 lg:grid-cols-2 gap-3'>
+      {
+        works.map((work) => (
+          <ProjectCard
+            client:only='svelte'
+            title={work.data.title}
+            url={`/works/${work.id}`}
+            image={work.data.main_image}
+            description={work.data.description}
+          />
+        ))
+      }
+    </div>
+  </section>
 </Layout>
