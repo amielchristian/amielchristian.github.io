@@ -63,7 +63,8 @@
           grid grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-5">
     {#each Object.entries(skills) as [name, { url, color }]}
       <img
-        class={`m-auto p-1 w-20 aspect-1 shadow-lg rounded-lg overflow-hidden ${color ?? 'bg-[#f4f2ed]'}`}
+        class={`m-auto p-1 w-20 aspect-1 shadow-lg rounded-lg overflow-hidden ${color ?? 'bg-[#f4f2ed]'}
+        grayscale-[20%] hover:grayscale-0 transition`}
         src={url}
         alt={name}
       />

@@ -1,8 +1,43 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   const { title, image, url, description } = $props();
+  const height = 30;
+  const width = 60;
+  const cellSize = 25;
+  let canvas: HTMLCanvasElement;
+
+  function drawGrid(context: CanvasRenderingContext2D) {
+    context.beginPath();
+    context.strokeStyle = '#ccca';
+
+    for (let i = 0; i <= height; i++) {
+      context.moveTo(i * (cellSize + 1) + 1, 0);
+      context.lineTo(i * (cellSize + 1) + 1, (cellSize + 1) * height + 1);
+    }
+
+    for (let i = 0; i <= width; i++) {
+      context.moveTo(0, i * (cellSize + 1) + 1);
+      context.lineTo((cellSize + 1) * width + 1, i * (cellSize + 1) + 1);
+    }
+
+    context.stroke();
+  }
+
+  onMount(() => {
+    canvas!.height = (cellSize + 1) * height + 1;
+    canvas!.width = (cellSize + 1) * width + 1;
+
+    const context: CanvasRenderingContext2D | null = canvas!.getContext('2d');
+    if (context) {
+      drawGrid(context);
+    }
+  });
 </script>
 
-<!-- for images: stretch to width  -->
+<!-- for images: stretch to width
+maybe center after a certain aspect ratio threshold?
+-->
 
 <a
   href={url}
@@ -13,9 +48,10 @@
         group hover:cursor-pointer
         duration-150"
 >
-  <div class="absolute top-0 bg-[image:] overflow-hidden w-full h-full">
+  <div class="absolute top-0 bg-white dark:bg-black drop-shadow-2xl overflow-hidden w-full h-full">
+    <canvas class="absolute top-0 z-0" bind:this={canvas}></canvas>
     <img
-      class="group-hover:blur-sm duration-150 z-0"
+      class="absolute top-0 group-hover:blur-[2px] duration-150 z-1"
       src={image}
       alt={`Image of ${title}`}
     />
