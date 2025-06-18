@@ -17,21 +17,20 @@ const featured = await getCollection('works', ({ data }) => {
     <div
       class='font-[Junicode] leading-none text-[calc(100%+15vw)] sm:text-[calc(100%+11.5vw)] md:text-[calc(100%+8vw)] xl:text-9xl font-bold'
     >
-      <div>
-        hello, my name is <span class='italic text-[var(--blue-1)]'>Amiel</span
+      <div class='lowercase'>
+        Hello, my name is <span class='italic text-[var(--blue-1)] normal-case'>Amiel</span
         >.
       </div>
     </div>
     <div class='sm:mt-6 mb-4 mx-[10%] lg:mx-[15%]'>
-      I'm a software developer and machine learning practitioner based in
-      Manila. Welcome to my little corner of the internet!
+      I'm a software engineer based in Manila, specializing in full-stack web development and machine. Welcome to my little corner of the internet!
     </div>
-    <div class='sm:mt-6 mb-4 mx-[10%] lg:mx-[15%]'>
+    <!-- <div class='sm:mt-6 mb-4 mx-[10%] lg:mx-[15%]'>
       Learn more about me <a
         class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
         href='/about'>here</a
       >.
-    </div>
+    </div> -->
     <SocialsBar client:only='react' />
   </header>
   <section class='mb-[5%]'>
