@@ -61,13 +61,14 @@ const featured = await getCollection('works', ({ data }) => {
     </div>
     <div class='mt-6 grid grid-cols-1 lg:grid-cols-2 gap-3'>
       {
-        featured.map((work) => (
+        featured.map((work, index) => (
           <ProjectCard
             client:only='svelte'
             title={work.data.title}
             url={`/works/${work.id}`}
             image={work.data.main_image}
             description={work.data.description}
+            {index}
           />
         ))
       }

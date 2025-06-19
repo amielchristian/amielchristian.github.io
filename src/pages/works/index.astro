@@ -13,13 +13,14 @@ const works = await getCollection('works');
     </div>
     <div class='mt-12 grid grid-cols-1 lg:grid-cols-2 gap-3'>
       {
-        works.map((work) => (
+        works.map((work, index) => (
           <ProjectCard
             client:only='svelte'
             title={work.data.title}
             url={`/works/${work.id}`}
             image={work.data.main_image}
             description={work.data.description}
+            {index}
           />
         ))
       }

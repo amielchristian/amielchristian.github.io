@@ -47,23 +47,6 @@ additional color palettes, esp. for projects: more pokemon
   --licorice: #26110dff;
 }
 
-.grid-pattern {
-  background-image: repeating-linear-gradient(
-      to right,
-      var(blue) 0,
-      var(blue) 1px,
-      transparent 1px,
-      transparent 25px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      var(blue) 0,
-      var(blue) 1px,
-      transparent 1px,
-      transparent 25px
-    );
-}
-
 .animated-border {
   background: linear-gradient(#252525, #252525) padding-box,
     linear-gradient(
