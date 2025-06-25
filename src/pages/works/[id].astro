@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 import { render } from 'astro:content';
+import { getAllImages } from '../../utils';
 
 // get all paths
 export async function getStaticPaths() {
@@ -16,12 +17,18 @@ export async function getStaticPaths() {
 // get work id from path
 const { work } = Astro.props;
 const { Content } = await render(work);
+
+// get all images
+const images: string[] = getAllImages(work.id);
 ---
 
 <Layout>
   <h1 class='text-4xl'>{work.data.title}</h1>
   <div class='markdown'>
     <Content />
+  </div>
+  <div>
+    {images.map((image) => <img src={image} />)}
   </div>
 </Layout>
 

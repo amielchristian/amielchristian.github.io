@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import ProjectCard from '../../components/global/ProjectCard.svelte';
 import { getCollection } from 'astro:content';
+import { getMainImage } from '../../utils';
 
 const works = await getCollection('works');
 ---
@@ -18,12 +19,15 @@ const works = await getCollection('works');
             client:only='svelte'
             title={work.data.title}
             url={`/works/${work.id}`}
-            image={work.data.main_image}
+            image={getMainImage(work.id)}
             description={work.data.description}
             {index}
           />
         ))
       }
+    </div>
+    <div class="grid grid-cols-3">
+
     </div>
   </section>
 </Layout>

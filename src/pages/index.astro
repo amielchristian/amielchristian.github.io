@@ -4,6 +4,7 @@ import SkillPanel from '../components/global/SkillPanel.svelte';
 import ProjectCard from '../components/global/ProjectCard.svelte';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { getMainImage } from '../utils';
 
 const featured = await getCollection('works', ({ data }) => {
   return data.featured;
@@ -66,7 +67,7 @@ const featured = await getCollection('works', ({ data }) => {
             client:only='svelte'
             title={work.data.title}
             url={`/works/${work.id}`}
-            image={work.data.main_image}
+            image={getMainImage(work.id)}
             description={work.data.description}
             {index}
           />
