@@ -3,7 +3,7 @@ title: 'CVBuild'
 repository: https://github.com/amielchristian/bini
 description: A resumé/CV builder, completely on the client.
 tech_stack: ['Svelte', 'WebAssembly', 'TypeScript', 'Tailwind']
-main_image: ''
+main_image: /works/cvbuild-main.png
 images: []
 ---
 

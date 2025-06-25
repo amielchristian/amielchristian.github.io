@@ -9,12 +9,10 @@
   let innerWidth = $state(window.innerWidth);
 
   const colorSchemes: string[][] = [
-    ['#ee9162', '#e1724d', '#f2d045', '#5f7d83', '#356b73', '#ebd69d', '#b1a282', '#26110d'], // cyndaquil
-    ['#DEECD8, #BADBB2, #79AD75, #FBFBFC, #D56671'], // gardevoir
-    ['#425765, #5cc8c7, #fbeda5, #fa6d80, #deeb24'], // dragapult
+    ['#ee9162', '#e1724d', '#f2d045', '#5f7d83', '#356b73'], // cyndaquil
+    ['#BADBB2, #79AD75, #D56671'], // gardevoir
+    ['#5cc8c7, #fbeda5, #fa6d80, #deeb24'], // dragapult
     ['#ff3800, #ff4f00, #f9df90, #cb0000, #d87d35'], // fennekin
-    ['#F4D638,#5AB355,#1F766D,#F1F0B8,#9C413E,#F4D638,#5AB355,#1F766D'], //snivy
-    ['#757cbb, #070808, #d2def1, #fbd13d, #a8c3dd'] // chandelure
   ];
   const colorScheme: string = colorSchemes[index % colorSchemes.length].join(', ');
 
@@ -73,7 +71,7 @@ maybe center after a certain aspect ratio threshold?
   style="--angle: 0deg;
         --border-color: linear-gradient(var(--angle), {colorScheme});"
   class="project-card relative rounded-md overflow-hidden
-        border-2 border-[var(--dark)] hover:border-4
+        border-2 border-[var(--dark)] hover:border-6
         [background:padding-box_var(--border-color),border-box_var(--border-color)] hover:border-transparent
         w-full h-75
         group hover:cursor-pointer
