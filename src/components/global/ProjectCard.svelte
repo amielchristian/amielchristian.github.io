@@ -82,7 +82,7 @@ maybe center after a certain aspect ratio threshold?
     bind:this={canvasContainer}
   >
     <!-- below will be replaced with Fabric, which will be used to allow mouse events -->
-    <canvas class="absolute top-0 z-1 bg-white" width="900" bind:this={canvas}
+    <canvas class={`absolute top-0 z-1 bg-white ${image ? 'group-hover:bg-black' : ''}`} width="900" bind:this={canvas}
     ></canvas>
     <!-- svelte-ignore a11y_missing_attribute -->
     <img

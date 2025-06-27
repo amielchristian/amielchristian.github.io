@@ -56,7 +56,7 @@
   bg-white/5 border-t-2
   border-t-[var(--dark)] dark:border-t-[var(--light)]
   text-[var(--dark)] dark:text-[var(--light)] text-2xl font-bold font-[BricolageGrotesque]
-  backdrop-blur-[18px]
+  backdrop-blur-[18px] z-10
   ${showNav ? 'right-0' : 'right-[-100vw]'}`}
 >
   <a class="pl-[10%] h-15 border-b-2 flex items-center" href="/">Home</a>
