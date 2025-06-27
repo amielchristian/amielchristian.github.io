@@ -54,13 +54,32 @@
       color: 'bg-[#d00000]',
     },
   };
+
+  let container: HTMLDivElement;
+  $effect(() => {
+    const updateAnimation = () => {
+      const angle =
+        (parseFloat(container.style.getPropertyValue('--angle')) + 0.5) % 360;
+      container.style.setProperty('--angle', `${angle}deg`);
+      requestAnimationFrame(updateAnimation);
+    };
+
+    requestAnimationFrame(updateAnimation);
+  });
 </script>
 
 <div
-  class="border-4 sm:border-6 rounded-4xl border-transparent animated-border shadow-xl overflow-hidden"
+  bind:this={container}
+  style="--angle: 0deg;
+        --background-color: linear-gradient(#252525);
+        --border-color: linear-gradient(var(--angle),var(--blue-1),var(--blue-2-dark),var(--yellow-1),var(--yellow-2));"
+  class="border-4 sm:border-6 rounded-4xl border-transparent shadow-xl overflow-hidden
+        [background:padding-box_var(--background-color),border-box_var(--border-color)]"
 >
-  <div class="w-full h-full p-5 sm:p-8 lg:p-12
-          grid grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-5">
+  <div
+    class="w-full h-full p-5 sm:p-8 lg:p-12
+          grid grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-5"
+  >
     {#each Object.entries(skills) as [name, { url, color }]}
       <img
         class={`m-auto p-1 w-20 aspect-1 shadow-lg rounded-lg overflow-hidden ${color ?? 'bg-[#f4f2ed]'}

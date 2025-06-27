@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <div class='grid grid-cols-5 grid-rows-5 w-full sm:w-[33%]'>
+  <!-- for images - to follow -->
+  <!-- <div class='grid grid-cols-5 grid-rows-5 w-full sm:w-[33%]'>
     <div></div>
     <div></div>
     <div></div>
@@ -11,14 +12,13 @@ import Layout from '../layouts/Layout.astro';
     <div></div>
     <div></div>
     <div></div>
-  </div>
+  </div> -->
   <h1 class='text-7xl'>Amiel Christian Mala-ay</h1>
   <h2 class='text-5xl font-[Junicode]'>
     <span class='text-[var(--blue-1)]'>/ˈeɪ.miəl/</span>, alt. <span
       class='text-[var(--blue-1)]'>/a.mjɛl/</span
     >
   </h2>
-  <div>short blurb about myself and my interests</div>
   <div>
     My name is Amiel Christian Mala-ay, a software engineer based in Manila,
     specializing in full-stack web development and machine learning,
@@ -26,22 +26,43 @@ import Layout from '../layouts/Layout.astro';
   </div>
   <div>
     From an early age, I have had a passion for technology and software, and I
-    have always enjoyed building things and solving problems. This led me to
-    pursue a degree in Computer Science at the University of Santo Tomas, where
-    I honed my skills in programming and software development. My coursework has
-    provided me with a solid foundation in full-stack web development, machine
-    learning, and compiler design, and I have had the opportunity to work on a
-    variety of projects that have allowed me to apply my knowledge in real-world
-    scenarios.
+    have always enjoyed building things, solving problems, and most importantly,
+    learning new things. This led me to pursue a degree in Computer Science at
+    the University of Santo Tomas, where I honed my skills in programming and
+    software development.
   </div>
   <div>
-    Outside of tech, I enjoy reading, playing video games, and sometimes
-    dabbling in writing. I have a particular interest in history and fantasy
-    literature, and I enjoy exploring new worlds and ideas through books and
-    games. I also enjoy writing short stories and poetry, and I find that
-    writing allows me to express my creativity and imagination in a different
-    way.
+    My coursework has provided me with a solid foundation in full-stack web
+    development, machine learning, and compiler design. I have also had the
+    opportunity to work on a variety of projects that have allowed me to apply
+    my knowledge in real-world scenarios.
   </div>
-  <div>tech stack again</div>
-  link to resume
+  <div>
+    This website serves as a portfolio of my work, showcasing my skills and
+    projects. I hope you enjoy exploring it as much as I enjoyed creating it!
+    Please feel free to <a
+      href='/contact'
+      class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
+    >reach out</a> if you have any questions or would like to collaborate with
+    me.
+  </div>
+  <!-- <div>
+    Outside of technology, I have a passion for history — I enjoy reading about
+    how our world and its different cultures have been shaped by the past. I also enjoy
+    reading and writing essays, particularly on topics related to technology and
+    its impact on society.
+  </div> -->
+  <div></div>
+  <div>
+    You can also take a look at my CV <a
+      class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
+      >here.</a
+    >
+  </div>
 </Layout>
+
+<style>
+  div {
+    margin-top: 1rem;
+  }
+</style>

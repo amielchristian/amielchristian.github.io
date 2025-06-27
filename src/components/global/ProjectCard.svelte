@@ -70,7 +70,7 @@ maybe center after a certain aspect ratio threshold?
   bind:this={card}
   style="--angle: 0deg;
         --border-color: linear-gradient(var(--angle), {colorScheme});"
-  class="project-card relative rounded-md overflow-hidden
+  class="relative rounded-md overflow-hidden
         border-2 border-[var(--dark)] hover:border-6
         [background:padding-box_var(--border-color),border-box_var(--border-color)] hover:border-transparent
         w-full h-75
