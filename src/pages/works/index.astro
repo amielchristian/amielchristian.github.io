@@ -9,9 +9,7 @@ const works = await getCollection('works');
 
 <Layout>
   <section class='mb-[5%]'>
-    <div class='font-[BricolageGrotesque] text-6xl font-bold text-center'>
-      Works
-    </div>
+    <h1 class='text-6xl font-bold text-center'>Works</h1>
     <div class='mt-12 grid grid-cols-1 lg:grid-cols-2 gap-3'>
       {
         works.map((work, index) => (
@@ -26,8 +24,6 @@ const works = await getCollection('works');
         ))
       }
     </div>
-    <div class="grid grid-cols-3">
-
-    </div>
+    <div class='grid grid-cols-3'></div>
   </section>
 </Layout>

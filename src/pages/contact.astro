@@ -1,9 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SocialsBar from '../components/global/SocialsBar';
 ---
-<Layout
-  ><div>Here's my contact information!</div>
-  <div>
-    You can reach me through email at <span>amiel.malaay@gmail.com</span>.
-  </div></Layout
->
+
+<Layout>
+  <section class='mb-[5%]'>
+    <h1 class='text-6xl font-bold text-center'>Contact</h1>
+    <div class='mt-12 text-center'>
+      <div>Got questions? Wanna work together?</div>
+      <div>
+        <div class='font-bold'>Amiel Christian Estrada Mala-ay</div>
+      </div>
+      <div>Manila, Philippines</div>
+      <a
+        href='cv.pdf'
+        class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
+        >Curriculum Vitae</a
+      >
+      <SocialsBar iconDims={8} className='gap-6 mt-8' />
+    </div>
+  </section>
+</Layout>

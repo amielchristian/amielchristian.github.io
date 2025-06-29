@@ -7,40 +7,54 @@ export default function SocialsBar({
   className?: string;
   iconDims?: number;
 }) {
+  const iconSize = `calc(var(--spacing)*${iconDims ?? 6})`;
   return (
-    <div className={className ?? 'flex flex-row justify-center gap-4 mb-3 text-[var(--icon)]'}>
+    <div
+      className={`flex flex-row justify-center gap-4 mb-3 text-[var(--icon)] ${
+        className ?? ''
+      }`}
+    >
       <a
         href='https://github.com/amielchristian'
         aria-label='GitHub'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#000000]`}
+        title='GitHub'
+        style={{ width: iconSize, height: iconSize }}
+        className='hover:text-[#000000]'
       >
         <GitHubSVG />
       </a>
       <a
         href='https://www.linkedin.com/in/amiel-christian-mala-ay/'
         aria-label='LinkedIn'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#0A66C2]`}
+        title='LinkedIn'
+        style={{ width: iconSize, height: iconSize }}
+        className='hover:text-[#0A66C2]'
       >
         <LinkedInSVG />
       </a>
       <a
         href='https://www.instagram.com/amiel_mly/'
         aria-label='Instagram'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' }`}
+        title='Instagram'
+        style={{ width: iconSize, height: iconSize }}
       >
         <InstagramSVG />
       </a>
       <a
         href='https://x.com/amiel_mly'
         aria-label='Twitter/X'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[#00AAEC]`}
+        title='Twitter/X'
+        style={{ width: iconSize, height: iconSize }}
+        className='hover:text-[#00AAEC]'
       >
         <TwitterSVG />
       </a>
       <a
         href='mailto:amiel.malaay@gmail.com'
         aria-label='Email'
-        className={`${iconDims ? `w-${iconDims} h-${iconDims}` : 'w-6 h-6' } hover:text-[var(--blue-1)]`}
+        title='Email'
+        style={{ width: iconSize, height: iconSize }}
+        className='hover:text-[var(--blue-1)]'
       >
         <EmailSVG />
       </a>
