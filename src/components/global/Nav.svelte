@@ -14,16 +14,15 @@
 >
   <a
     class="w-[80%] sm:w-[25%] font-[Junicode] text-[1.4em] md:text-2xl font-bold text-nowrap tracking-tight overflow-hidden"
-    href="/"
-    ><span>Amiel Christian</span></a
+    href="/"><span>Amiel Christian</span></a
   >
   <div
     class="hidden sm:flex w-[50%] px-[5%] justify-between place-self-center font-[BricolageGrotesque]"
   >
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/works">Works</a>
-    <a href="/contact">Contact</a>
+    <a class="hover:underline" href="/">Home</a>
+    <a class="hover:underline" href="/about">About</a>
+    <a class="hover:underline" href="/works">Works</a>
+    <a class="hover:underline" href="/contact">Contact</a>
   </div>
   <div class="w-[25%] flex flex-row gap-4 justify-end">
     <button

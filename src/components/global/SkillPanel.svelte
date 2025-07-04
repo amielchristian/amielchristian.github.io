@@ -71,7 +71,7 @@
 <div
   bind:this={container}
   style="--angle: 0deg;
-        --background-color: linear-gradient(#252525);
+        --background-color: linear-gradient(#252525, #1a1a1a);
         --border-color: linear-gradient(var(--angle),var(--blue-1),var(--blue-2-dark),var(--yellow-1),var(--yellow-2));"
   class="border-4 sm:border-6 rounded-4xl border-transparent shadow-xl overflow-hidden
         [background:padding-box_var(--background-color),border-box_var(--border-color)]"
