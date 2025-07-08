@@ -7,7 +7,7 @@ const works = defineCollection({
     title: z.string(),
     description: z.string(),
     featured: z.boolean().optional(),
-    tech_stack: z.array(z.string())
+    techStack: z.array(z.string())
   }),
 });
 

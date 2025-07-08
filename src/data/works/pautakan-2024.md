@@ -1,7 +1,7 @@
 ---
 title: 'Pautakan 2024'
 description: z.string(),
-tech_stack: ['Electron', 'JavaScript']
+techStack: ['Electron', 'JavaScript']
 main_image: ''
 images: []
 ---

@@ -23,13 +23,36 @@ const images: string[] = getAllImages(work.id);
 ---
 
 <Layout>
-  <h1 class='text-4xl'>{work.data.title}</h1>
-  <div class='markdown'>
-    <Content />
-  </div>
-  <div>
-    {images.map((image) => <img src={image} />)}
-  </div>
+  <section class='sm:mx-[10%]'>
+    <!-- <div>
+      <h3 class="text-xl">Tech Stack</h3>
+      <ul class="flex flex-wrap gap-2">
+        {work.data.techStack.map((tech) => (
+          <li class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">
+            {tech}
+          </li>
+        ))}
+    </div> -->
+    <div class=''>
+      <h1 class='text-8xl'>{work.data.title}</h1>
+      <h3 class='italic'>{work.data.description}</h3>
+      <div class='flex flex-row gap-4 mb-4 mt-2'>
+        {
+          work.data.techStack.map((tech) => (
+            <div class='bg-[var(--blue-1)] text-[var(--light)] py-1 px-3 rounded-4xl'>
+              {tech}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class='markdown'>
+      <Content />
+    </div>
+    <div>
+      {images.map((image) => <img src={image} />)}
+    </div>
+  </section>
 </Layout>
 
 <style is:global>

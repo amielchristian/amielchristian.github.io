@@ -2,7 +2,7 @@
 title: 'Ribbit'
 repository: https://github.com/amielchristian/ribbit-blog
 description: z.string(),
-tech_stack: ['Laravel', 'Bootstrap', 'MySQL']
+techStack: ['Laravel', 'Bootstrap', 'MySQL']
 main_image: ''
 images: []
 ---

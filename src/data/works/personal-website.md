@@ -1,7 +1,7 @@
 ---
 title: 'Personal Website'
 description: z.string(),
-tech_stack: ['Astro', 'React', 'Svelte', 'TypeScript', 'Sass']
+techStack: ['Astro', 'React', 'Svelte', 'TypeScript', 'Sass']
 main_image: ''
 images: []
 ---

@@ -2,7 +2,7 @@
 title: 'Ror'
 repository: https://github.com/amielchristian/Ror
 description: Coding makes you fierce.
-tech_stack: ['Java']
+techStack: ['Java']
 main_image: ''
 images: []
 ---

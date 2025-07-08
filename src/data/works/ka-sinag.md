@@ -1,7 +1,7 @@
 ---
 title: 'Ka-Sinag'
 description: z.string(),
-tech_stack: ['Bootstrap', 'Django']
+techStack: ['Bootstrap', 'Django']
 main_image: ''
 images: []
 ---
