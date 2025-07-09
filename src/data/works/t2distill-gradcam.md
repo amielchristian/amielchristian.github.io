@@ -1,6 +1,6 @@
 ---
 title: 'T2Distill-GradCAM'
-featured: true
+isFeatured: true
 description: A novel machine learning framework built as part of my thesis.
 techStack: ['Python', 'TensorFlow', 'Keras']
 main_image: ''

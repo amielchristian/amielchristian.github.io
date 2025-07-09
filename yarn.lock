@@ -546,6 +546,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lucide/astro@^0.525.0":
+  version "0.525.0"
+  resolved "https://registry.npmjs.org/@lucide/astro/-/astro-0.525.0.tgz#227cdf496d7ab8bdc71bcddf7957e4c32f1e0d1b"
+  integrity sha512-CjX9aJlmHg5/Io6mRSrSi3TbwRXtrV/6kwsRjv6eVhBymAA8ogq3j8YrV1PsXn1EHK9HFyzeJOhaXGm00acVLg==
+
 "@lucide/svelte@^0.514.0":
   version "0.514.0"
   resolved "https://registry.npmjs.org/@lucide/svelte/-/svelte-0.514.0.tgz"

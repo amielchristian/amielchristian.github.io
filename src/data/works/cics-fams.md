@@ -1,6 +1,6 @@
 ---
 title: 'CICS-FAMS'
-featured: true
+isFeatured: true
 description: A faculty attendance monitoring system for the University of Santo Tomas College of Information and Computing Sciences.
 techStack: ['Django', 'PostgreSQL', 'Bootstrap', 'JavaScript']
 ---

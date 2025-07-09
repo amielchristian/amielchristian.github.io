@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { ExternalLink, Github } from '@lucide/svelte';
 
 import { render } from 'astro:content';
 import { getAllImages } from '../../utils';
@@ -14,11 +15,10 @@ export async function getStaticPaths() {
   }));
 }
 
-// get work id from path
-const { work } = Astro.props;
+const { work } = Astro.props; // get work id from path
 const { Content } = await render(work);
-
-// get all images
+const repository: string | undefined = work.data.repository;
+const liveDemo: string | undefined = work.data.liveDemo;
 const images: string[] = getAllImages(work.id);
 ---
 
@@ -33,39 +33,72 @@ const images: string[] = getAllImages(work.id);
           </li>
         ))}
     </div> -->
-    <div class=''>
-      <h1 class='text-8xl'>{work.data.title}</h1>
-      <h3 class='italic'>{work.data.description}</h3>
-      <div class='flex flex-row gap-4 mb-4 mt-2'>
+    <div>
+      <div id='header' class='flex flex-row items-end justify-between mb-4'>
+        <div>
+          <h1 class='text-6xl font-bold'>{work.data.title}</h1>
+          <div class='flex flex-row flex-wrap gap-x-2 gap-y-1 mt-2'>
+            {
+              work.data.techStack.map((tech) => (
+                <div class='dark:bg-[var(--blue-2)] bg-[var(--blue-2-dark)] text-[var(--dark)] dark:text-[var(--light)] text-sm py-1 px-3 rounded-4xl'>
+                  {tech}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div class='flex flex-col justify-end gap-1'>
+          {
+            repository && (
+              <a
+                class='bg-[var(--yellow-2)] p-2 rounded-4xl'
+                aria-label='GitHub Repository'
+                href={work.data.repository}
+              >
+                <Github color='var(--light)' size={20} />
+              </a>
+            )
+          }
+          {
+            liveDemo && (
+              <a
+                class='bg-[var(--yellow-2)] p-2 rounded-4xl'
+                aria-label='Live Website'
+                href={work.data.liveDemo}
+              >
+                <ExternalLink color='var(--light)' size={20} />
+              </a>
+            )
+          }
+        </div>
+      </div>
+      <!-- <h3 class='italic'>{work.data.description}</h3> -->
+      <hr />
+      <div class='markdown my-8'>
+        <Content />
+      </div>
+      <div>
         {
-          work.data.techStack.map((tech) => (
-            <div class='bg-[var(--blue-1)] text-[var(--light)] py-1 px-3 rounded-4xl'>
-              {tech}
-            </div>
+          images.map((image) => (
+            <img src={image} class='rounded-2xl overflow-hidden' />
           ))
         }
       </div>
     </div>
-    <div class='markdown'>
-      <Content />
-    </div>
-    <div>
-      {images.map((image) => <img src={image} />)}
-    </div>
   </section>
-</Layout>
 
-<style is:global>
-  .markdown a {
-    color: rgb(134, 14, 232);
-  }
-  .markdown h1 {
-    font-size: x-large;
-  }
-  .dark .markdown a {
-    color: aqua;
-  }
-  .markdown p {
-    margin: 1% auto;
-  }
-</style>
+  <style is:global>
+    .markdown a {
+      color: #597072;
+    }
+    .dark .markdown a {
+      color: #7e9ea0;
+    }
+    .markdown h1 {
+      font-size: x-large;
+    }
+    .markdown p {
+      margin: 1rem auto;
+    }
+  </style>
+</Layout>

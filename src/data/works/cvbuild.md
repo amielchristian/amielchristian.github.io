@@ -1,6 +1,7 @@
 ---
 title: 'CVBuild'
 repository: https://github.com/amielchristian/bini
+liveDemo: https://amielchristian.github.io/cvbuild
 description: A resumé/CV builder, completely on the client.
 techStack: ['Svelte', 'WebAssembly', 'TypeScript', 'Tailwind']
 ---

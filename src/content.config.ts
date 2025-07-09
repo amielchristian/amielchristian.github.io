@@ -6,8 +6,10 @@ const works = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    featured: z.boolean().optional(),
-    techStack: z.array(z.string())
+    isFeatured: z.boolean().optional(),
+    techStack: z.array(z.string()),
+    repository: z.string().optional(),
+    liveDemo: z.string().optional(),
   }),
 });
 
