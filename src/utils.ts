@@ -8,9 +8,12 @@ export function getMainImage(name: string) {
 
 export function getAllImages(name: string): string[] {
   // get keys from import.meta.glob, then filter to find all images in the folder with the given name
-  return Object.keys(
-    import.meta.glob('../public/works/*/*', { eager: true })
-  ).filter((key) => key.includes(name) && isImage(key));
+  return Object.keys(import.meta.glob('../public/works/*/*', { eager: true }))
+    .filter((key) => key.includes(name) && isImage(key))
+    .sort((a, _) => {
+      if (a.includes('main.')) return -1;
+      else return 0;
+    });
 }
 
 function isImage(file: string) {
