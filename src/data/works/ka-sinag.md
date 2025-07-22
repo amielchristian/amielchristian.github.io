@@ -1,9 +1,5 @@
 ---
 title: 'Ka-Sinag'
-description: z.string(),
+description: A simple proof-of-concept web application for an e-commerce platform.
 techStack: ['Bootstrap', 'Django']
-main_image: ''
-images: []
 ---
-
-A simple proof-of-concept web application for an e-commerce platform.

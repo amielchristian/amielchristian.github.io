@@ -1,10 +1,8 @@
 ---
 title: 'T2Distill-GradCAM'
 isFeatured: true
-description: A novel machine learning framework built as part of my thesis.
+description: My undergraduate thesis: a novel framework for training computer vision models.
 techStack: ['Python', 'TensorFlow', 'Keras']
-main_image: ''
-images: []
 ---
 
 T2Distill-GradCAM is a novel framework based on the Vision Transformer (ViT) architecture, leveraging advanced machine learning techniques such as Knowledge Distillation (KD), Class Activation Mapping (CAM), Convolutional Neural Networks (CNN), and Convolutional Autoencoders (CAE).
