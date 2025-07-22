@@ -3,66 +3,118 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <section class='mb-[5%]'>
-    <!-- for images - to follow -->
-    <!-- <div class='grid grid-cols-5 grid-rows-5 w-full sm:w-[33%]'>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div> -->
-    <h1 class='text-7xl'>Amiel Christian Mala-ay</h1>
-    <h2 class='text-5xl font-[Junicode]'>
-      <span class='text-[var(--blue-1)]'>/ˈeɪ.miəl/</span>, alt. <span
-        class='text-[var(--blue-1)]'>/a.mjɛl/</span
+  <div class='flex flex-col sm:flex-row gap-2 sm:gap-10'>
+    <div class='block sm:hidden'>
+      <h1 class='text-6xl text-center'>Amiel Christian Mala-ay</h1>
+      <h2 class='text-4xl font-[Junicode] text-center'>
+        <span class='text-[var(--blue-1)]'>/ˈeɪ.miəl/</span>, alt. <span
+          class='text-[var(--blue-1)]'>/a.mjɛl/</span
+        >
+      </h2>
+    </div>
+    <div id="images"
+      class='mx-auto gap-1
+            grid sm:flex sm:flex-col lg:grid
+            grid-cols-[repeat(5,14vw)] grid-rows-[repeat(8,14vw)]
+            lg:grid-cols-[repeat(5,7vw)] lg:grid-rows-[repeat(8,7vw)]
+            xl:grid-cols-[repeat(5,5vw)] xl:grid-rows-[repeat(8,5vw)]'
+    >
+      <div
+        class='border-1 border-gray grayscale hover:grayscale-0 duration-200
+        rounded-tl-md sm:rounded-tl-none lg:rounded-tl-md
+        col-span-3 row-span-4 overflow-clip'
       >
-    </h2>
-    <div>
-      My name is Amiel Christian Mala-ay, a software engineer based in Manila,
-      specializing in full-stack web development and machine learning,
-      particularly computer vision.
+        <img
+          src='./pictures/pic-1.jpeg'
+          class='object-cover w-[100%] h-[100%]'
+        />
+      </div>
+      <div
+        class='border-1 border-gray grayscale hover:grayscale-0 duration-200
+        rounded-tr-md sm:rounded-tr-none lg:rounded-tr-md
+        col-span-2 row-span-3 overflow-clip'
+      >
+        <img
+          src='./pictures/pic-2.jpeg'
+          class='object-cover w-[100%] h-[100%]'
+        />
+      </div>
+      <div
+        class='border-1 border-gray grayscale hover:grayscale-0 duration-200
+        col-span-2 row-span-2 overflow-clip'
+      >
+        <img
+          src='./pictures/pic-3.jpeg'
+          class='object-cover w-[100%] h-[100%]'
+        />
+      </div>
+      <div
+        class='border-1 border-gray grayscale hover:grayscale-0 duration-200
+        rounded-bl-md sm:rounded-bl-none lg:rounded-bl-md
+        col-span-3 row-span-4 overflow-clip'
+      >
+        <img
+          src='./pictures/pic-4.jpg'
+          class='object-cover w-[100%] h-[100%]'
+        />
+      </div>
+      <div
+        class='border-1 border-gray grayscale hover:grayscale-0 duration-200
+        rounded-br-md sm:rounded-br-none lg:rounded-br-md
+        col-span-2 row-span-3 overflow-clip'
+      >
+        <img
+          src='./pictures/pic-5.jpeg'
+          class='object-cover w-[100%] h-[100%]'
+        />
+      </div>
     </div>
-    <div>
-      From an early age, I have had a passion for technology and software, and I
-      have always enjoyed building things, solving problems, and most
-      importantly, learning new things. This led me to pursue a degree in
-      Computer Science at the University of Santo Tomas, where I developed a
-      solid foundation in full-stack web development and machine learning. I
-      have also had the opportunity to work on a variety of projects that have
-      allowed me to apply my knowledge and create impactful solutions to
-      real-world projects.
-    </div>
-    <div>
-      This website serves as a portfolio of my work, showcasing my skills and
-      projects. I hope you enjoy exploring it as much as I enjoyed creating it!
-      Please feel free to <a
-        href='/contact'
-        class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
-        >reach out</a
-      > if you have any questions or would like to collaborate with me.
-    </div>
-    <!-- <div>
+    <section class='mb-[5%]'>
+      <div class='hidden sm:block'>
+        <h1 class='text-6xl'>Amiel Christian Mala-ay</h1>
+        <h2 class='text-4xl font-[Junicode]'>
+          <span class='text-[var(--blue-1)]'>/ˈeɪ.miəl/</span>, alt. <span
+            class='text-[var(--blue-1)]'>/a.mjɛl/</span
+          >
+        </h2>
+      </div>
+      <div class='mt-[1rem]'>
+        My name is Amiel Christian Mala-ay, a software engineer based in Manila,
+        specializing in full-stack web development and machine learning,
+        particularly computer vision.
+      </div>
+      <div class='mt-[1rem]'>
+        From an early age, I have had a passion for technology and software, and
+        I have always enjoyed building things, solving problems, and most
+        importantly, learning new things. This led me to pursue a degree in
+        Computer Science at the University of Santo Tomas, where I developed a
+        solid foundation in full-stack web development and machine learning. I
+        have also had the opportunity to work on a variety of projects that have
+        allowed me to apply my knowledge and create impactful solutions to
+        real-world projects.
+      </div>
+      <div class='mt-[1rem]'>
+        This website serves as a portfolio of my work, showcasing my skills and
+        projects. I hope you enjoy exploring it as much as I enjoyed creating
+        it! Please feel free to <a
+          href='/contact'
+          class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
+          >reach out</a
+        > if you have any questions or would like to collaborate with me.
+      </div>
+      <!-- <div>
     Outside of technology, I have a passion for history — I enjoy reading about
     how our world and its different cultures have been shaped by the past. I also enjoy
     reading and writing essays, particularly on topics related to technology and
     its impact on society.
   </div> -->
-    <div></div>
-    <div>
-      You can also take a look at my CV <a
-        href='Mala-ay - CV.pdf'
-        class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
-        >here.</a
-      >
-    </div>
-  </section>
+      <div class='mt-[1rem]'>
+        You can also take a look at my CV <a
+          href='./Mala-ay - CV.pdf'
+          class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
+          >here.</a
+        >
+      </div>
+    </section>
+  </div>
 </Layout>
-
-<style>
-  div {
-    margin-top: 1rem;
-  }
-</style>
