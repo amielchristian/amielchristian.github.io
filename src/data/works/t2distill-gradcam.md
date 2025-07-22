@@ -1,7 +1,7 @@
 ---
 title: 'T2Distill-GradCAM'
 isFeatured: true
-description: My undergraduate thesis: a novel framework for training computer vision models.
+description: "My undergraduate thesis: a novel framework for training computer vision models."
 techStack: ['Python', 'TensorFlow', 'Keras']
 ---
 
