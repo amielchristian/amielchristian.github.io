@@ -17,7 +17,7 @@ import SocialsBar from '../components/global/SocialsBar';
         class='text-[var(--blue-2)] dark:text-[var(--blue-2-dark)] underline'
         >Curriculum Vitae</a
       >
-      <SocialsBar iconDims={8} className='gap-6 mt-8' />
+      <SocialsBar iconDims={8} className='gap-6 mt-8' client:only="react" />
     </div>
   </section>
 </Layout>

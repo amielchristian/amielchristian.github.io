@@ -121,8 +121,6 @@ function LinkedInSVG() {
 function InstagramSVG() {
   const [hover, setHover] = useState(false);
 
-  useEffect(() => {}, [hover]);
-
   return (
     <svg
       onMouseEnter={() => setHover(true)}
